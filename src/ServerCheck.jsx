@@ -155,7 +155,7 @@ export default function ServerCheck({ children }) {
   const [checked, setChecked] = useState(false);
   const [serverAlive, setServerAlive] = useState(true);
   const [loading, setLoading] = useState(true);
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const checkSession = async () => {
     setLoading(true);
     try {
