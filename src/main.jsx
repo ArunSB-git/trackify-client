@@ -35,12 +35,41 @@ import ServerCheck from "./ServerCheck";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  // <BrowserRouter>
+  //   <ServerCheck>
+  //     <Routes>
+  //       <Route path="/login" element={<Login />} />
+  //       <Route path="/*" element={<App />} />
+  //     </Routes>
+  //   </ServerCheck>
+  // </BrowserRouter>
   <BrowserRouter>
-    <ServerCheck>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/*" element={<App />} />
-      </Routes>
-    </ServerCheck>
-  </BrowserRouter>
+  <Routes>
+    <Route path="/login" element={<Login />} />
+
+    <Route
+      path="/*"
+      element={
+        <ServerCheck>
+          <App />
+        </ServerCheck>
+      }
+    />
+  </Routes>
+</BrowserRouter>
 );
+
+<BrowserRouter>
+  <Routes>
+    <Route path="/login" element={<Login />} />
+
+    <Route
+      path="/*"
+      element={
+        <ServerCheck>
+          <App />
+        </ServerCheck>
+      }
+    />
+  </Routes>
+</BrowserRouter>
