@@ -1,16 +1,42 @@
-# React + Vite
+# 🚀 Trackify – Frontend (Client)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Trackify is a habit and task tracking web application that helps users build consistent habits and visualize their monthly progress.  
+This repository contains the **frontend** built with **React + Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Application
 
-## React Compiler
+- **Deployed URL:** https://trackify-client-wy2i.onrender.com
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Google OAuth login (via backend)
+- Session-based authentication
+- Monthly habit tracking UI
+- Progress visualization using circular indicators
+- Create, edit, delete habits
+- Session validation on page reload
+- Light / Dark theme support
+- Responsive and clean UI
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- Vite
+- React Router
+- Fetch API
+- Material UI (loading & feedback components)
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env` file in the root:
+
+```env
+VITE_API_BASE_URL=https://trackify-server-ireb.onrender.com
