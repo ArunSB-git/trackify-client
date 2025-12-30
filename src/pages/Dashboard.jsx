@@ -21,6 +21,9 @@ export default function Dashboard({ theme, toggleTheme }) {
 const loadDashboard = async () => {
   try {
     const tasksRes = await fetch(`${API_BASE_URL}/api/tasks`, { credentials: "include" });
+    if (tasksRes.status===401) {
+      return;
+    }
     const tasksData = await tasksRes.json();
 
     // Get current year and month in yyyy-MM format
